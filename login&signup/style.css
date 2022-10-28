@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(images/background.webp);
+    background-size: cover;
+    color: #fff;
+    background-position: center;
+}
+
+#big {
+    padding-top: 60px;
+    padding-bottom: 0;
+    font-size: 40px;
+    padding-left: 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.prompt p {
+    padding-bottom: 500px;
+    font-size: 25px;
+    color: #fff;
+    padding-left: 165px;
+}
+
+.prompt p a {
+    text-decoration: none;
+    color: #6a66dc;
+    box-sizing: border-box;
+    border: 1px #fff;
+    background: rgba(255, 255, 255, 0.262);
+    border-radius: 10px;
+}
+
+a:hover {
+    cursor: pointer;
+    color: rgb(12, 240, 200);
+}
+
+.prompt p a::after {
+    color: #f004ff;
+}
+
+footer {
+    font-size: 13px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    text-align: center;
+    justify-content: center;
+    background: #6a66dc;
+    border-radius: 20px;
+}
+
+.header {
+    align-items: center;
+}
+
+.form-box {
+    margin-top: 60px;
+    width: 450px;
+    height: 450px;
+    display: flex;
+    box-sizing: border-box;
+    box-shadow: -12px -15px 12px -8px #fff,
+        10px 10px 10px -10px #fff;
+    border-radius: 30px;
+    margin-left: 500px;
+    margin-bottom: 100px;
+}
+
+.form-box.signup {
+    height: 700px;
+}
+
+.inner-box {
+    margin-top: 5px;
+    align-items: center;
+    font-size: 30px;
+}
+
+.inner-box p {
+    margin-left: 85px;
+}
+
+.inner-box #checkbox {
+    margin-left: 15px;
+}
+
+.input-box {
+    width: 90%;
+    height: 50px;
+    margin-left: 15px;
+    margin-top: 5px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    background: transparent;
+    box-sizing: border-box;
+    box-shadow: inset -8px -8px 8px -8px #fff,
+        inset 8px 8px 8px -8px #fff;
+
+}
+
+.remember {
+    margin-left: 15px;
+    color: #fff;
+    font-size: 20px;
+    display: inline-block;
+}
+
+button {
+    border-radius: 35px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 90px;
+    height: 30px;
+}
+
+button:hover {
+    cursor: pointer;
+    background: rgb(12, 240, 200);
+}
+
+#button {
+    margin-left: 15px;
+    display: flex;
+}
+
+#button button {
+    flex-basis: 30%;
+}
+
+label {
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+select {
+    font-size: 15px;
+}
+
+#button span {
+    flex-basis: 60%;
+}
+
+span {
+    display: block;
+    font-size: 15px;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+span a {
+    text-decoration: none;
+    color: #6a66dc;
+    cursor: pointer;
+}
+
+
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+#success {
+    font-size: 30px;
+    justify-content: center;
+    margin-bottom: 400px;
+    margin-top: 40px;
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}

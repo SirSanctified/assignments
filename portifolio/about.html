@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c2a451e059.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="sub-title">About Me</h1>
+    </header>
+    <article id="about">
+        <div class="container">
+            <div class="row">
+                <figure class="about-col-1">
+                    <img src="images/me.jpg" alt="Insert me please">
+                </figure>
+                <section class="about-col-2">
+                    <p>
+                        A passionate full stack software engineer with a strong background in back-end.
+                        Currently studying Computer Science with Great Zimbabwe University, as well as full stack
+                        software engineering with ALX Africa. Also studying Web Development with Zuri Training.
+                        My passion is to develop software that meets the users' expectations using the least available resources.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Back-end Development<br></span>Developing Web/App back-ends</li>
+                            <li><span>Front-end Development<br></span>Developing Web front-ends</li>
+                            <li><span>Server Administration<br></span>Setting up and managing web servers</li>
+                            <li><span>Database Administration<br></span>Managing and monitoring databases</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Currently unavailable</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021 - Current<br></span>Computer Science at Great Zimbabwe University</li>
+                            <li><span>2022 - Current<br></span>Fulstack Software Engeneering at ALX Africa</li>
+                            <li><span>2022 - Current<br></span>Fullstack Web Development with Zuri</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </article>
+    <footer class="copyright">
+        <p>Copyright &#169;2022 by Pritchard. All Rights reserved.</p>
+    </footer>
+
+    <script>
+        let tablinks = document.getElementsByClassName("tab-links");
+        let tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+</body>
+
+</html>
