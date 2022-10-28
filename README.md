@@ -77,4 +77,4 @@ Set range as function parameter and prompt the player to predict the generated n
 
 Note: 1. No third-party dependencies
 
-          2. You don’t need to style your HTML
+      2. You don’t need to style your HTML
